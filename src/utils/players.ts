@@ -44,9 +44,24 @@ export const getMoviePlayers = (id: string | number, startAt?: number): PlayersP
       ads: true,
     },
     {
-      title: "AutoEmbed 1",
-      source: `https://autoembed.co/movie/tmdb/${id}`,
+      title: "<Embed>",
+      source: `https://embed.su/embed/movie/${id}`,
+      ads: true,
+    },
+    {
+      title: "SuperEmbed",
+      source: `https://multiembed.mov/directstream.php?video_id=${id}&tmdb=1`,
       fast: true,
+      ads: true,
+    },
+    {
+      title: "FilmKu",
+      source: `https://filmku.stream/embed/${id}`,
+      ads: true,
+    },
+    {
+      title: "NontonGo",
+      source: `https://www.nontongo.win/embed/movie/${id}`,
       ads: true,
     },
     {
@@ -139,9 +154,24 @@ export const getTvShowPlayers = (
       resumable: true,
     },
     {
+      title: "<Embed>",
+      source: `https://embed.su/embed/tv/${id}/${season}/${episode}`,
+      ads: true,
+    },
+    {
       title: "SuperEmbed",
       source: `https://multiembed.mov/directstream.php?video_id=${id}&tmdb=1&s=${season}&e=${episode}`,
       fast: true,
+      ads: true,
+    },
+    {
+      title: "FilmKu",
+      source: `https://filmku.stream/embed/series?tmdb=${id}&sea=${season}&epi=${episode}`,
+      ads: true,
+    },
+    {
+      title: "NontonGo",
+      source: `https://www.NontonGo.win/embed/tv/${id}/${season}/${episode}`,
       ads: true,
     },
     {
