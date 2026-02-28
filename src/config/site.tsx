@@ -127,6 +127,9 @@ export const siteConfig: SiteConfigType = {
       },
     ],
   },
+  socials: {
+    github: "https://github.com/xyzcinema",
+  },
 };
 
 export type SiteConfig = typeof siteConfig;
