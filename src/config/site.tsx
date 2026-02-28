@@ -124,6 +124,11 @@ export const siteConfig: SiteConfigType = {
         // @ts-expect-error: Property 'adult' is missing in type 'TopRatedTvShowResult' but required in type 'TV'.
         query: () => tmdb.tvShows.topRated(),
         param: "topRated",
+      },
+    ],
+  },
+  socials: {
+    github: "https://github.com/xyzcinema",
   },
 };
 
